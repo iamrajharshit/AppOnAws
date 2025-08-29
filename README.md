@@ -90,7 +90,6 @@ uv run python main.py
 
 The terminal will show output indicating that the server is running, usually on http://122.161.54.45:5000.
 
-Open your web browser and navigate to **https://www.google.com/search?q=http://122.161.54.45:5000** to use the application.
 
 ## **How to Use the App**
 
