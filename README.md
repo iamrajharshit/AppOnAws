@@ -46,26 +46,27 @@ This guide walks through setting up the project from scratch using Python 3.10 a
 
 1. Create the Virtual Environment  
    First, create a virtual environment specifically with Python 3.10.  
-   python3.10 \-m venv .venv
+   `py -3.10 -m venv .venv`
 
 2. Activate the Environment  
    Activate the newly created environment.  
    * **On macOS/Linux:**  
-     source .venv/bin/activate
+     `source .venv/bin/activate`
 
    * **On Windows (PowerShell/CMD):**  
-     .venv\\Scripts\\activate
+     `.venv\\Scripts\\activate`
 
 3. Install uv  
    Inside the active environment, install uv using pip.  
-   pip install uv
+   `pip install uv`
 
 4. Initialize the Project with uv  
    Run uv init to create a pyproject.toml file for your project.  
-   uv init
+  ` uv init`
 
 5. Add Dependencies to pyproject.toml  
    Open the newly created pyproject.toml file and add flask to the \[project.dependencies\] array. It should look like this:  
+     ``` 
    \[project\]  
    name \= "flask\_file\_app"  
    version \= "0.1.0"  
@@ -74,10 +75,10 @@ This guide walks through setting up the project from scratch using Python 3.10 a
        "flask",  
    \]  
    \# ... rest of the file
-
+   ```
 6. Install Dependencies with uv sync  
    Now, tell uv to install the dependencies listed in your pyproject.toml file. The sync command is extremely fast.  
-   uv sync
+   `uv sync`
 
 7. Add Animal Images  
    Ensure you have placed cat.jpg, dog.jpg, and elephant.jpg inside the static/images/ directory.
@@ -86,7 +87,7 @@ This guide walks through setting up the project from scratch using Python 3.10 a
 
 With your environment set up and dependencies synced, use uv run to execute the Flask application script.
 
-uv run python main.py
+`uv run python main.py`
 
 The terminal will show output indicating that the server is running, usually on http://122.161.54.45:5000.
 
