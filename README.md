@@ -102,3 +102,6 @@ The terminal will show output indicating that the server is running, usually on 
 * **Backend**: Python, Flask  
 * **Frontend**: HTML, CSS, JavaScript (vanilla)  
 * **Package Management**: uv
+
+## AWS Intregation 
+ - To Be Done
