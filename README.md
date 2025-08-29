@@ -103,5 +103,5 @@ The terminal will show output indicating that the server is running, usually on 
 * **Frontend**: HTML, CSS, JavaScript (vanilla)  
 * **Package Management**: uv
 
-## AWS Intregation 
+## AWS Integration 
  - To Be Done
